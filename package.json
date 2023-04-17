@@ -9,7 +9,9 @@
     "format": "prettier --check .",
     "format:fix": "prettier --write .",
     "lint": "next lint",
-    "lint:fix": "next lint --fix"
+    "lint:fix": "next lint --fix",
+    "lint:types": "tsc --noEmit",
+    "code-check": "yarn format:fix && yarn lint && yarn lint:types"
   },
   "dependencies": {
     "@types/node": "18.15.11",
@@ -40,6 +42,7 @@
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-unicorn": "^46.0.0",
     "husky": "^8.0.3",
+    "lint-staged": "^13.2.1",
     "prettier": "^2.8.7",
     "prettier-plugin-tailwindcss": "^0.2.7"
   }
