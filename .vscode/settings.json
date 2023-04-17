@@ -42,5 +42,10 @@
   },
 
   "typescript.tsdk": "node_modules/typescript/lib",
-  "typescript.enablePromptUseWorkspaceTsdk": true
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+
+  "files.associations": {
+    "*.css": "scss"
+  },
+  "scss.validate": false
 }
