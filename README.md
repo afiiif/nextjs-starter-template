@@ -19,9 +19,14 @@ This starter template contains:
 
 ## Getting Started
 
-1. Install dependencies: `yarn install`
-2. Run the development server: `yarn dev`
-3. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Clone this repo.  
+   💡 You can use [degit](https://www.npmjs.com/package/degit):
+   ```bash
+   npx degit afiiif/nextjs-starter-template YOUR_APP_NAME
+   ```
+2. Install dependencies: `yarn install`
+3. Run the development server: `yarn dev`
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Learn More
 
