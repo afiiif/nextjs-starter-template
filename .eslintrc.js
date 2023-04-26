@@ -1,6 +1,19 @@
 const globalRules = {
+  'react/jsx-props-no-spreading': 'off',
+  'react/no-unescaped-entities': 'off',
   'import/prefer-default-export': 'off',
-  'simple-import-sort/imports': 'error',
+  'simple-import-sort/imports': [
+    'error',
+    {
+      groups: [
+        ['^\\u0000'],
+        ['^node:'],
+        ['^react(/.+)?$', '^next(/.+)?$', '^@?\\w'],
+        ['^'],
+        ['^\\.'],
+      ],
+    },
+  ],
   'unicorn/prevent-abbreviations': 'off',
   'unicorn/no-null': 'off',
   'unicorn/no-array-callback-reference': 'off',
@@ -9,11 +22,14 @@ const globalRules = {
   'unicorn/prefer-number-properties': 'off',
   'unicorn/prefer-top-level-await': 'off',
   'unicorn/new-for-builtins': 'off',
+  'sonarjs/prefer-single-boolean-return': 'error',
+  'sonarjs/no-nested-template-literals': 'error',
+  'sonarjs/no-element-overwrite': 'error',
 };
 
 module.exports = {
-  extends: ['airbnb', 'plugin:unicorn/recommended', 'prettier'],
-  plugins: ['simple-import-sort'],
+  extends: ['airbnb', 'plugin:unicorn/recommended', 'next/core-web-vitals', 'prettier'],
+  plugins: ['simple-import-sort', 'sonarjs'],
   rules: {
     ...globalRules,
     'no-console': 'off',
