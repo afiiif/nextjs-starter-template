@@ -30,4 +30,4 @@ This starter template contains:
 
 ## Learn More
 
-- https://beta.nextjs.org/docs
+- https://nextjs.org/docs
