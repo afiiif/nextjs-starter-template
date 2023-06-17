@@ -1,6 +1,11 @@
 const globalRules = {
+  'no-console': 'off',
+  'no-underscore-dangle': 'off',
+
   'react/jsx-props-no-spreading': 'off',
   'react/no-unescaped-entities': 'off',
+  'react/require-default-props': 'off',
+
   'import/prefer-default-export': 'off',
   'simple-import-sort/imports': [
     'error',
@@ -14,6 +19,7 @@ const globalRules = {
       ],
     },
   ],
+
   'unicorn/prevent-abbreviations': 'off',
   'unicorn/no-null': 'off',
   'unicorn/no-array-callback-reference': 'off',
@@ -22,6 +28,7 @@ const globalRules = {
   'unicorn/prefer-number-properties': 'off',
   'unicorn/prefer-top-level-await': 'off',
   'unicorn/new-for-builtins': 'off',
+
   'sonarjs/prefer-single-boolean-return': 'error',
   'sonarjs/no-nested-template-literals': 'error',
   'sonarjs/no-element-overwrite': 'error',
@@ -32,7 +39,6 @@ module.exports = {
   plugins: ['simple-import-sort', 'sonarjs'],
   rules: {
     ...globalRules,
-    'no-console': 'off',
     'import/prefer-default-export': 'off',
   },
   overrides: [
@@ -57,7 +63,6 @@ module.exports = {
       ],
       rules: {
         ...globalRules,
-        'no-console': 'off',
         'global-require': 'off',
         'unicorn/prefer-module': 'off',
       },
