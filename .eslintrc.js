@@ -1,6 +1,7 @@
 const globalRules = {
   'no-console': 'off',
   'no-underscore-dangle': 'off',
+  'no-restricted-exports': 'off',
 
   'react/jsx-props-no-spreading': 'off',
   'react/no-unescaped-entities': 'off',
@@ -28,6 +29,7 @@ const globalRules = {
   'unicorn/prefer-number-properties': 'off',
   'unicorn/prefer-top-level-await': 'off',
   'unicorn/new-for-builtins': 'off',
+  'unicorn/filename-case': 'off',
 
   'sonarjs/prefer-single-boolean-return': 'error',
   'sonarjs/no-nested-template-literals': 'error',
